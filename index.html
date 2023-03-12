@@ -1,0 +1,165 @@
+<!--
+ Copyright (c) 2023 tapiocode
+ https://github.com/tapiocode
+ MIT License
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>overflow-shadow demo</title>
+    <style>
+      /* Local styles for the demo */
+      :root {
+        --body-bg: #f5f5f7;
+        --body-color: #1d1d1f;
+        --outline-color: #dfdfdf;
+        --surface-background: #fff;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: var(--body-color);
+        background-color: var(--body-bg);
+      }
+      p {
+        line-height: 1.5;
+      }
+      .content-wrapper {
+        padding: 0 1rem;
+        margin: 10vh auto;
+      }
+      .content {
+        min-width: 17rem;
+        max-width: 50rem;
+        margin: 0 auto;
+      }
+
+      h2 {
+        margin: 2.4rem 0 1rem;
+      }
+      section {
+        background-color: var(--surface-background);
+        border-radius: .4rem;
+        box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+        height: 25rem;
+        outline: 1px solid var(--outline-color);
+        overflow: hidden;
+      }
+      section h3,
+      .section-container {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+      }
+      section h3 {
+        margin: 0;
+        padding-top: .9rem;
+        padding-bottom: .9rem;
+        border-bottom: 1px solid var(--outline-color);
+      }
+      section h4 {
+        margin-bottom: 0rem;
+      }
+      section p {
+        margin-top: .3rem;
+      }
+
+      .section-container {
+        margin-top: 1.6rem;
+        margin-bottom: 3rem;
+      }
+
+      .flex-column {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="content">
+
+        <h2>HTML Content</h2>
+        <section>
+          <div class="flex-column">
+            <h3>
+              <code>&lt;section></code>: The Generic Section element
+            </h3>
+            <div style="flex: 1; height: 0;">
+              <div overflow-shadow>
+                <div class="section-container">
+                  <p>
+                    The <code>&lt;section></code> HTML element represents a generic standalone section of a document,
+                    which doesn't have a more specific semantic element to represent it. Sections should
+                    always have a heading, with very few exceptions.
+                  </p>
+                  <h4>Attributes</h4>
+                  <p>
+                    This element only includes the global attributes.
+                  </p>
+                  <h4>Usage Notes</h4>
+                  <p>
+                    As mentioned above, <code>&lt;section></code> is a generic sectioning element, and should only be
+                    used if there isn't a more specific element to represent it. As an example, a navigation menu
+                    should be wrapped in a <code>&lt;nav></code> element, but a list of search results or a map display
+                    and its controls don't have specific elements, and could be put inside a <code>&lt;section></code>.
+                  </p>
+                  <h4>Using a section without a heading</h4>
+                  <p>
+                    Circumstances where you might see <code>&lt;section></code> used without a heading are typically
+                    found in web application/UI sections rather than in traditional document structures. In a document,
+                    it doesn't really make any sense to have a separate section of content without a heading to
+                    describe its contents. Such headings are useful for all readers, but particularly useful for
+                    users of assistive technologies like screen readers, and they are also good for SEO.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <h2>Plain Text</h2>
+        <section>
+          <div overflow-shadow>
+            Laborum magni nesciunt et dignissimos rerum sunt possimus. Molestiae enim amet ipsum dolorem magnam nihil. Et reiciendis qui odit omnis.
+
+            Perferendis eaque adipisci non. Aut est ut possimus eius repellendus voluptatem. Odio voluptatem ipsa accusantium. Repudiandae fugiat perspiciatis a soluta fugit facere commodi non. Magni incidunt consequatur magni veritatis inventore facere eos neque. Autem quia et porro.
+
+            Ducimus consequuntur eveniet magni. Odit illo illo harum. Possimus aspernatur est vitae accusamus aliquid ut eveniet. Officiis ipsam quisquam quas qui. Sequi ex ut provident dolorum eius nisi sit ut.
+
+            Sit similique non architecto debitis doloribus quia. Autem animi veritatis maxime numquam nemo. Ipsum quas eos deleniti optio autem corrupti consequatur quia. Sint non voluptatem corporis. Labore maxime dolores qui eaque et magnam quo fugiat.
+
+            Nisi asperiores ut rerum nihil voluptas minima nisi nesciunt. Voluptate ea rerum ut fugit accusantium repellendus aut nihil. Eum quo molestias eum.
+
+            Laborum magni nesciunt et dignissimos rerum sunt possimus. Molestiae enim amet ipsum dolorem magnam nihil. Et reiciendis qui odit omnis.
+
+            Perferendis eaque adipisci non. Aut est ut possimus eius repellendus voluptatem. Odio voluptatem ipsa accusantium. Repudiandae fugiat perspiciatis a soluta fugit facere commodi non. Magni incidunt consequatur magni veritatis inventore facere eos neque. Autem quia et porro.
+
+            Ducimus consequuntur eveniet magni. Odit illo illo harum. Possimus aspernatur est vitae accusamus aliquid ut eveniet. Officiis ipsam quisquam quas qui. Sequi ex ut provident dolorum eius nisi sit ut.
+
+            Sit similique non architecto debitis doloribus quia. Autem animi veritatis maxime numquam nemo. Ipsum quas eos deleniti optio autem corrupti consequatur quia. Sint non voluptatem corporis. Labore maxime dolores qui eaque et magnam quo fugiat.
+
+            Nisi asperiores ut rerum nihil voluptas minima nisi nesciunt. Voluptate ea rerum ut fugit accusantium repellendus aut nihil. Eum quo molestias eum.
+
+            Laborum magni nesciunt et dignissimos rerum sunt possimus. Molestiae enim amet ipsum dolorem magnam nihil. Et reiciendis qui odit omnis.
+
+            Perferendis eaque adipisci non. Aut est ut possimus eius repellendus voluptatem. Odio voluptatem ipsa accusantium. Repudiandae fugiat perspiciatis a soluta fugit facere commodi non. Magni incidunt consequatur magni veritatis inventore facere eos neque. Autem quia et porro.
+
+            Ducimus consequuntur eveniet magni. Odit illo illo harum. Possimus aspernatur est vitae accusamus aliquid ut eveniet. Officiis ipsam quisquam quas qui. Sequi ex ut provident dolorum eius nisi sit ut.
+
+            Sit similique non architecto debitis doloribus quia. Autem animi veritatis maxime numquam nemo. Ipsum quas eos deleniti optio autem corrupti consequatur quia. Sint non voluptatem corporis. Labore maxime dolores qui eaque et magnam quo fugiat.
+
+            Nisi asperiores ut rerum nihil voluptas minima nisi nesciunt. Voluptate ea rerum ut fugit accusantium repellendus aut nihil. Eum quo molestias eum.
+          </div>
+        </section>
+
+        <h2>Image</h2>
+        <div overflow-shadow style="height: 200px">
+          <img alt="" width="100%" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Cpath fill='%23C0C0C9' d='M25.1,0H50v50H0V0H25.1z M45.7,45.7V4.3H4.3v41.4H45.7z'/%3E%3Cpath fill='%23C0C0C9' d='M40.6,37.5c-10.4,0-20.8,0-31.2,0c2.1-4.1,4.1-8.3,6.2-12.4c2.1,2.1,4.1,4.1,6.2,6.3 c3.2-4.2,6.3-8.4,9.4-12.6C34.4,25,37.5,31.2,40.6,37.5z'/%3E%3Ccircle fill='%23C0C0C9' cx='18.8' cy='15.6' r='3.1'/%3E%3C/svg%3E" />
+        </div>
+
+      </div>
+    </div>
+    <script src="overflow-shadow.js"></script>
+  </body>
+</html>
